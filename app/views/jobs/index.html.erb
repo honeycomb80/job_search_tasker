@@ -1,0 +1,9 @@
+<h3> Search for jobs </h3>
+
+<div>
+	<%= form_for :results, url: results_path do |f| %>
+		<%= f.text_field :job_desc, placeholder: "job title" %>
+		<%= f.text_field :job_loc, placeholder: "city, state" %>
+		<%= f.submit "Be awesome"%>
+		<% end %>
+</div>
